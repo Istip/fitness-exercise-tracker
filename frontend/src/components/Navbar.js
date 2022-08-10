@@ -19,7 +19,9 @@ const Navbar = () => {
         <nav>
           {user ? (
             <div>
-              <span>{user.email}</span>
+              <span>
+                <small>{user.email} </small>
+              </span>
               <button onClick={handleClick}>Log out</button>
             </div>
           ) : (
